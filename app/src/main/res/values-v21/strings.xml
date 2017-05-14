@@ -1,0 +1,4 @@
+<resources>
+    <string name="default_title">Default Music Player</string>
+    <string name="default_desc">This app will open when the widget is tapped if another app is not already playing music</string>
+</resources>

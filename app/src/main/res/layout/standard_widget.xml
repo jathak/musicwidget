@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutwidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundshape"
+    android:clickable="true"
+    android:orientation="horizontal" >
+
+   <!-- <LinearLayout
+        android:id="@+id/WidgetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:clickable="true" android:background="@drawable/backgroundshape">
+-->
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:weightSum="3.04"
+                android:orientation="horizontal">
+<ImageButton
+                    android:id="@+id/prev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/widgetbutton"
+                    android:src="@drawable/ic_action_previous"
+                    android:hapticFeedbackEnabled="true"/>
+
+<LinearLayout
+    android:layout_width="1dp"
+    android:layout_weight="0.02"
+    android:background="#888888"
+    android:layout_height="match_parent" ></LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/play"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/widgetbutton"
+                    android:src="@drawable/ic_action_play"
+                    android:hapticFeedbackEnabled="true"/>
+
+<LinearLayout
+    android:layout_width="1dp"
+    android:layout_weight="0.02"
+    android:background="#888888"
+    android:layout_height="match_parent" ></LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/widgetbutton"
+                    android:src="@drawable/ic_action_next"
+                    android:hapticFeedbackEnabled="true"/>
+                
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/WidgetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginBottom="-2dp"
+                android:layout_above="@id/linearLayout3"
+                android:orientation="vertical" android:layout_alignParentLeft="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+<LinearLayout android:id="@+id/dividerlayout"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#888888" android:layout_height="0dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="-3dp"
+    android:layout_marginRight="-3dp"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="4dp">
+
+                        <TextView
+                            android:id="@+id/song"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:maxLines="3"
+                            android:textColor="#ffffff"
+                            android:fontFamily="sans-serif-light"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                             />
+
+                        <TextView
+                                android:id="@+id/artist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="2"
+                                android:scrollHorizontally="true"
+                                android:textColor="#ffffff"
+                                android:fontFamily="sans-serif-light"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textAllCaps="false" />
+                        <TextView
+                            android:id="@+id/album"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:scrollHorizontally="true"
+                            android:textColor="#ffffff"
+                            android:fontFamily="sans-serif-light"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textAllCaps="false" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+</LinearLayout>

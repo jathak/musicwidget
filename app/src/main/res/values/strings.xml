@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ubiquity Music Widget</string>
+    <string name="fourbyone">Ubiquity Music Widget (4x1)</string>
+    <string name="fullbleed">Ubiquity Music Widget (Full Bleed)</string>
+    <string name="title_activity_main">Ubiquity Music Widget</string>
+    <string-array name="fonts">
+        <item>Light</item>
+        <item>Normal</item>
+        <item>Thin</item>
+        <item>Condensed</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+    <string name="default_title">App to Launch from Widget</string>
+    <string name="default_desc">This is only the app that launches when you tap on the album art. Any music app can send metadata to the widget.</string>
+</resources>
